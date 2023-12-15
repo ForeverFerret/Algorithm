@@ -10,7 +10,7 @@ def trim(s: str) -> str:
     """去除字符串首位空格"""
 
     # 空格字符
-    space_char = " "
+    space_char = ' '
 
     # 首字符
     start_num = 0
