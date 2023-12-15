@@ -1,7 +1,10 @@
-#!/usr/bin/env python
-# coding=utf-8
-# @Author: "YuShengjia"
-# @Email: chinanetysj@gmail.com
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+Author: YuShengjia
+Email: chinanetysj@gmail.com
+"""
 
 def trim(s: str) -> str:
     """去除字符串首位空格"""
