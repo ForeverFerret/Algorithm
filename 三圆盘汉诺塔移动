@@ -27,8 +27,14 @@ def move(n, a, b, c):
     """汉诺塔(三圆盘)移动"""
 
     if n == 1:
+        # 仅有一个盘子的时候
+        # 直接将A柱(Source)的n(此时n=1)号盘 --> C柱(Target)
         print(a, '-->', c)
     else:
+        # 多个盘子的时候
+        # 1. 先将A柱(Source)的(n - 1)号盘 --> B柱(Auxiliary)
+        # 2. 再将A柱(Source)的(n)号盘 --> C柱(Target)
+        # 3. 最后将B柱(Auxiliary)的(n - 1)号盘 --> C柱(Target)
         move(n - 1, a, c, b)
         print(a, '-->', c)
         move(n - 1, b, a, c)
