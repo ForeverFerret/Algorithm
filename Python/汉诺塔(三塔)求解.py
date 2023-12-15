@@ -12,7 +12,7 @@ def move(n, a, b, c):
     # 当仅有一个盘子的时候
     # 直接将A柱(Source)的n(此时n=1)号盘 --> C柱(Target)
     if n == 1:
-        print(a, '-->', c)
+        print(a, "-->", c)
     
     # 多个盘子的时候
     # 1. 先将A柱(Source)的(n - 1)号盘 --> B柱(Auxiliary)
@@ -22,7 +22,7 @@ def move(n, a, b, c):
     # A: 因为假如有两个圆盘, 上面的是1号, 下面的是2号, 移动的话要先动1号, 也就是(n-1)号
     else:
         move(n - 1, a, c, b)
-        print(a, '-->', c)
+        print(a, "-->", c)
         move(n - 1, b, a, c)
 
 def main():
