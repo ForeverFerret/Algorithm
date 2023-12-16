@@ -19,5 +19,6 @@ def main():
     L2 = list(map(normalize, L1))
     print(L2)
 
+
 if __name__ == "__main__":
     main()
