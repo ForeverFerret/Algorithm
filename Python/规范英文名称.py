@@ -8,10 +8,9 @@ Email: chinanetysj@gmail.com
 
 def normalize(name: str) -> str:
     """规范英文名称"""
-    from functools import reduce
     return reduce(
         lambda x, y: x + y.lower(),
-        map(lambda char: char.upper(), name),
+        map(str.upper, name),
     )
 
 def main():
