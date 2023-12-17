@@ -19,6 +19,5 @@ def log(func_or_arg: Any):
                 print("func: %s, %s..." % (func_name, func_or_arg))
                 return f
             return inner_wrapper
-        return wrapper
     # 返回装饰器函数
     return wrapper
